@@ -1,0 +1,23 @@
+﻿using System;
+
+namespace Aml.Skins
+{
+    /// <summary>
+    /// The skin source.
+    /// </summary>
+    public class SkinSource
+    {
+        public static SkinSource Instance { get; } = new SkinSource();
+        public static Uri DarkSkin { get; } = new Uri("/Aml.Skins;component/Themes/Dark.Styles.xaml", UriKind.Relative);
+        public static Uri LightSkin { get; } = new Uri("/Aml.Skins;component/Themes/Light.Styles.xaml", UriKind.Relative);        
+        public static Uri DarkSkinColors  { get; } = new Uri("/Aml.Skins;component/Themes/Dark.Theme.Colors.xaml", UriKind.Relative);
+        public static Uri LightSkinColors { get; } = new Uri("/Aml.Skins;component/Themes/Light.Theme.Colors.xaml", UriKind.Relative);        
+
+
+        /// <summary>
+        /// Prevents a default instance of the <see cref="SkinSource"/> class from being created.
+        /// </summary>
+        private SkinSource()
+        { }
+    }
+}

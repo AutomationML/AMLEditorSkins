@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net48;net6.0-windows;netcoreapp3.1;net5.0-windows</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<UseWPF>true</UseWPF>
+		<SignAssembly>True</SignAssembly>
+		<AssemblyOriginatorKeyFile>AmlSkinsKey.snk</AssemblyOriginatorKeyFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Version>1.0.0</Version>
+		<Authors>Josef Prinz</Authors>
+		<Company>AutomationML Association</Company>
+		<Description>This package provides the icons and styles used in the AutomationML Editor, among others, to design the user interface. Plugin developers can use this package to synchronize the appearance of a plugin with that of the editor.</Description>
+		<Copyright>AutomationML e.V. 2022</Copyright>
+		<PackageProjectUrl>https://www.automationml.org</PackageProjectUrl>
+		<PackageIcon>AML.png</PackageIcon>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>AMLEditor; AutomationML; AML;</PackageTags>
+		<PackageReleaseNotes>First release version</PackageReleaseNotes>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="AML.png" />
+	  <None Remove="readme.md" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="AML.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </Content>
+	  <Content Include="readme.md" >
+				
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+				</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Page Update="Themes\DarkSkin.xaml">
+	    <Generator>XamlIntelliSenseFileGenerator</Generator>
+	  </Page>
+	  <Page Update="Themes\LightSkin.xaml">
+	    <Generator>XamlIntelliSenseFileGenerator</Generator>
+	  </Page>
+	</ItemGroup>
+
+</Project>
