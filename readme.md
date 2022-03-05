@@ -4,3 +4,4 @@ The **Aml.Skin** provides icons and styles to design a user interface providing 
 
 The **Aml.Skin** can be used by AutomationML editor plugin developers to adapt the plugin UI design to the editors UI design. It supports theming for dark and light themes and is based on [MahApps.Metro](https://mahapps.com).
 
+[1]: https://raw.githubusercontent.com/AutomationML/AMLEngine2.1/master/img/AutomationML-Logo.png
