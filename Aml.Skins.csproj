@@ -1,25 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net48;net6.0-windows;netcoreapp3.1;net5.0-windows</TargetFrameworks>
+		<TargetFrameworks>net7.0-windows;net6.0-windows</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
 		<UseWPF>true</UseWPF>
 		<SignAssembly>True</SignAssembly>
 		<AssemblyOriginatorKeyFile>AmlSkinsKey.snk</AssemblyOriginatorKeyFile>
-		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Version>1.0.0</Version>
-		<Authors>Josef Prinz</Authors>
-		<Company>AutomationML Association</Company>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Version>2.0.0</Version>
+		<Authors>AutomationML, Josef Prinz</Authors>
+		<Company>AutomationML</Company>
 		<Description>This package provides the icons and styles used in the AutomationML Editor, among others, to design the user interface. Plugin developers can use this package to synchronize the appearance of a plugin with that of the editor.</Description>
 		<Copyright>AutomationML e.V. 2022</Copyright>
 		<PackageProjectUrl>https://www.automationml.org</PackageProjectUrl>
 		<PackageIcon>AML.png</PackageIcon>
+		<EnableDynamicLoading>true</EnableDynamicLoading>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>AMLEditor; AutomationML; AML;</PackageTags>
-		<PackageReleaseNotes>First release version</PackageReleaseNotes>
+		<PackageReleaseNotes>Removed target NET 5 because end of support by Microsoft; Projects in .NET 5, should migrate to .NET 6 (LTS) or keep using a previous version; .NET 7.0 target added</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/AutomationML/AMLEditorSkins</RepositoryUrl>
+		<Platforms>AnyCPU;x64</Platforms>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<Configurations>Debug;Release;ReleaseTest</Configurations>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -32,7 +37,7 @@
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </Content>
-	  <Content Include="readme.md" >
+	  <Content Include="readme.md">
 				
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>

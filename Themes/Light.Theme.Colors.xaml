@@ -6,22 +6,25 @@
     mc:Ignorable="d">
 
 
-    <!--  AML Icon Theme Brushes  -->
-
-    <SolidColorBrush x:Key="AMLIconBorder" Color="#FF016DBB" />
-    <SolidColorBrush x:Key="AMLIconFill" Color="Transparent" />
-    <SolidColorBrush x:Key="AMLIconForeground" Color="Black" />
-    <SolidColorBrush x:Key="AMLLibIconForeground" Color="White" />
-    <SolidColorBrush x:Key="AMLLibIconFill" Color="#FF016DBB" />
-
-    <SolidColorBrush x:Key="AdornerIconFill" Color="#FF565656" />
-
     <!--  ********************************** THEME BRUSHES - For Color Tuner **********************************  -->
     <SolidColorBrush x:Key="Brush01" Color="#FF00AADE" />
     <SolidColorBrush x:Key="Brush02" Color="White" />
     <SolidColorBrush x:Key="Brush03" Color="#FFC6C6C6" />
     <SolidColorBrush x:Key="Brush04" Color="#FF565656" />
     <SolidColorBrush x:Key="Brush05" Color="#FF333333" />
+
+    <!--  AML Icon Theme Brushes  -->
+
+
+    <SolidColorBrush x:Key="AMLIconBorder" Color="#FF016DBB" />
+    <SolidColorBrush x:Key="AMLIconFill" Color="Transparent" />
+    <SolidColorBrush x:Key="AMLIconForeground" Color="Black" />
+    <SolidColorBrush x:Key="AMLLibIconForeground" Color="White" />
+    <SolidColorBrush x:Key="AMLLibIconFill" Color="#FF016DBB" />
+    <SolidColorBrush x:Key="VersionIconFill" Color="#FFC6C6C6" />
+
+    <SolidColorBrush x:Key="AdornerIconFill" Color="DarkGreen" />
+    <SolidColorBrush x:Key="AdornerIconFill2" Color="Blue" />
 
     <!--  LINK COLORS  -->
     <SolidColorBrush x:Key="LINK_000" Color="#FF060606" />

@@ -3,6 +3,7 @@ using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls.Primitives;
 
 #nullable disable
 namespace Aml.Skins
@@ -12,6 +13,9 @@ namespace Aml.Skins
     {
         public static Action<ResourceDictionary> ApplyColors { get; set; }
         public static ResourceDictionary ThemeColors { get; set; }
+
+
+        public static bool IsDarkMode {get; private set;}
 
           /// <summary>
         /// Applies the skin to the application
@@ -45,11 +49,18 @@ namespace Aml.Skins
             var theme = skinDictionaryUri.OriginalString.Contains ("Dark.Styles") ? "Dark" : "Light";
             ThemeManager.Current.ChangeThemeBaseColor(Application.Current, theme);
 
-            ThemeColors = (theme == "Dark") 
+            IsDarkMode = theme == "Dark";
+            SetColors (theme == "Dark");
+        }
+
+        public static void SetColors (bool isDarkMode)
+        {
+            ThemeColors = (isDarkMode) 
                 ? new ResourceDictionary {Source = SkinSource.DarkSkinColors }                
                 : new ResourceDictionary {Source =SkinSource.LightSkinColors };
             
             ApplyColors?.Invoke (ThemeColors);
         }
+
     }
 }

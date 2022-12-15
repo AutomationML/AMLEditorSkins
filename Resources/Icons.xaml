@@ -3,6 +3,111 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
 
+    <DrawingImage x:Key="TreeExpandIcon" PresentationOptions:Freeze="True">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Brush="#00FFFFFF" Geometry="F1M16,16L0,16 0,0 16,0z" />
+                    <GeometryDrawing Brush="#FFF6F6F6" Geometry="F1M14,14L2,14 2,2 14,2z" />
+                    <GeometryDrawing Brush="#FF424242" Geometry="F1M12,12L4,12 4,4 12,4z M3,13L13,13 13,3 3,3z" />
+                    <GeometryDrawing Brush="#FFEFEFF0" Geometry="F1M11,9L9,9 9,11 7,11 7,9 5,9 5,7 7,7 7,5 9,5 9,7 11,7z M4,12L12,12 12,4 4,4z" />
+                    <GeometryDrawing Brush="#FF00529C" Geometry="F1M11,7L11,9 9,9 9,11 7,11 7,9 5,9 5,7 7,7 7,5 9,5 9,7z" />
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+    <DrawingImage x:Key="AMLCaptureIcon" PresentationOptions:Freeze="True">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Brush="#00FFFFFF" Geometry="F1M16,16L0,16 0,0 16,0z" />
+                    <GeometryDrawing Brush="#FFF6F6F6" Geometry="F1M0,15L16,15 16,0 0,0z" />
+                    <GeometryDrawing Brush="#FF424242" Geometry="F1M1,1L1,10 2,9.073 2,2 14,2 14,11.098 15,12 15,1z" />
+                    <GeometryDrawing Brush="#FF424242" Geometry="F1M1,1L1,10 2,9.073 2,2 14,2 14,11.098 15,12 15,1z" />
+                    <GeometryDrawing Brush="#FFEFEFF0" Geometry="F1M10,4.5C10,5.328 10.672,6 11.5,6 12.328,6 13,5.328 13,4.5 13,3.672 12.328,3 11.5,3 10.672,3 10,3.672 10,4.5 M5,6.293L2,9.293 2,2 14,2 14,11.293 12,9.293 10,11.293z" />
+                    <GeometryDrawing Brush="#FF1AA1E2" Geometry="F1M1,10L5,6.293 10,11.293 12,9.293 15,12 15,14 1,14z" />
+                    <GeometryDrawing Brush="#FFC17C1A" Geometry="F1M11.5,3C10.672,3 10,3.672 10,4.5 10,5.328 10.672,6 11.5,6 12.328,6 13,5.328 13,4.5 13,3.672 12.328,3 11.5,3" />
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+    <DrawingImage x:Key="AMLCaptureToFileIcon" PresentationOptions:Freeze="True">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Brush="#00FFFFFF" Geometry="F1M16,16L0,16 0,0 16,0z" />
+                    <GeometryDrawing Brush="#FFF6F6F6" Geometry="F1M2.9997,-0.000199999999999534L2.9997,6.9998 -0.000300000000000189,6.9998 -0.000300000000000189,15.9998 2.9997,15.9998 8.9997,15.9998 16.0007,15.9998 16.0007,4.3788 11.6207,-0.000199999999999534z" />
+                    <GeometryDrawing Brush="#FF424242" Geometry="F1M11,5L11,2.207 13.793,5z M11.207,1L4,1 4,7 5,7 5,2 10,2 10,6 14,6 14,14 9,14 9,15 15,15 15,4.793z" />
+                    <GeometryDrawing Brush="#FF424242" Geometry="F1M7,9L2,9 2,12.5 3.5,11 7,13.5z M5.5,14L3.5,12.5 2,14z M8,15L1,15 1,8 8,8z M4.691,10.359C4.691,9.836 5.116,9.41 5.641,9.41 6.165,9.41 6.59,9.836 6.59,10.359 6.59,10.883 6.165,11.309 5.641,11.309 5.116,11.309 4.691,10.883 4.691,10.359" />
+                    <GeometryDrawing Brush="#FFEFEFF0" Geometry="F1M5.6406,11.3086C5.1166,11.3086 4.6906,10.8826 4.6906,10.3596 4.6906,9.8356 5.1166,9.4106 5.6406,9.4106 6.1646,9.4106 6.5896,9.8356 6.5896,10.3596 6.5896,10.8826 6.1646,11.3086 5.6406,11.3086 M2.0316,9.0316L2.0316,12.4686 3.4996,10.9996 6.9686,13.4776 6.9686,9.0316z" />
+                    <GeometryDrawing Brush="#FFEFEFF0" Geometry="F1M3.5,12.5L2.031,13.969 5.458,13.969z" />
+                    <GeometryDrawing Brush="#FFEFEFF0" Geometry="F1M5.6406,11.3086C5.1166,11.3086 4.6906,10.8826 4.6906,10.3596 4.6906,9.8356 5.1166,9.4106 5.6406,9.4106 6.1646,9.4106 6.5896,9.8356 6.5896,10.3596 6.5896,10.8826 6.1646,11.3086 5.6406,11.3086 M2.0316,9.0316L2.0316,12.4686 3.4996,10.9996 6.9686,13.4776 6.9686,9.0316z" />
+                    <GeometryDrawing Brush="#FFEFEFF0" Geometry="F1M3.5,12.5L2.031,13.969 5.458,13.969z" />
+                    <GeometryDrawing Brush="#FFEFEFF0" Geometry="F1M11,2.207L11,5 13.793,5z" />
+                    <GeometryDrawing Brush="#FFEFEFF0" Geometry="F1M10,6L10,2 5,2 5,7 9,7 9,14 14,14 14,6z" />
+                    <GeometryDrawing Brush="#FFF0EFF1" Geometry="F1M11,2.207L11,5 13.793,5z" />
+                    <GeometryDrawing Brush="#FFF0EFF1" Geometry="F1M10,6L10,2 5,2 5,7 9,7 9,14 14,14 14,6z" />
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+
+    <DrawingImage x:Key="AMLImageLoadIcon" PresentationOptions:Freeze="True">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Brush="#00FFFFFF" Geometry="F1M16,16L0,16 0,0 16,0z" />
+                    <GeometryDrawing Brush="#FFF6F6F6" Geometry="F1M3.5856,0.000700000000000145L-0.000399999999999956,3.5867 -0.000399999999999956,8.4137 1.9996,6.4137 1.9996,7.9997 4.0276,7.9997 4.0276,15.9997 16.0006,15.9997 16.0006,3.9667 8.0006,3.9667 8.0006,3.5867 4.4146,0.000700000000000145z" />
+                    <GeometryDrawing Brush="#FF434343" Geometry="F1M3,7L3,4 1,6 1,4 4,1 7,4 7,6 5,4 5,7z" />
+                    <GeometryDrawing Brush="#FF434343" Geometry="F1M14,12.7187L14,13.9997 6,13.9997 6,12.0837 6,11.8047 8,9.5937 10.5,12.9997 12.5,11.4507 14,12.5937z M8,4.9997L8,5.9997 14,5.9997 14,10.8907 14,10.9997 12.5,9.9997 10.687,11.3597 8,7.8727 7.743,8.1567 6,10.0837 6,9.9687 6,7.9997 5,7.9997 5,14.9997 15,14.9997 15,4.9997z" />
+                    <GeometryDrawing Brush="#FF434343" Geometry="F1M12.3906,8.1953C12.3906,8.8553 11.8556,9.3903 11.1956,9.3903 10.5356,9.3903 9.9996,8.8553 9.9996,8.1953 9.9996,7.5353 10.5356,7.0003 11.1956,7.0003 11.8556,7.0003 12.3906,7.5353 12.3906,8.1953" />
+                    <GeometryDrawing Brush="#FFF0EFF1" Geometry="F1M14,12.7187L12.5,11.5467 10.5,13.1407 8,9.7967 6,12.0837 6,13.9997 14,13.9997z" />
+                    <GeometryDrawing Brush="#FFF0EFF1" Geometry="F1M11.1953,9.3906C10.5353,9.3906 10.0003,8.8556 10.0003,8.1956 10.0003,7.5356 10.5353,6.9996 11.1953,6.9996 11.8553,6.9996 12.3903,7.5356 12.3903,8.1956 12.3903,8.8556 11.8553,9.3906 11.1953,9.3906 M8.0003,5.9996L8.0003,7.7496 10.7183,11.2966 12.5003,9.9066 14.0003,10.8906 14.0003,5.9996z" />
+                    <GeometryDrawing Brush="#FFF0EFF1" Geometry="F1M6,6.4141L6,8.0001 6,9.9691 7.685,8.1001z" />
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+    <DrawingImage x:Key="AMLSettingsIcon" PresentationOptions:Freeze="True">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Brush="#00FFFFFF" Geometry="F1M16,16L0,16 0,0 16,0z" />
+                    <GeometryDrawing Brush="#FFF6F6F6" Geometry="F1M5.9859,-0.000199999999999534L5.6129,2.2378 3.7669,0.918800000000001 0.9189,3.7668 2.2369,5.6128 -9.99999999997669E-05,5.9858 -9.99999999997669E-05,10.0118 2.2369,10.3868 0.9189,12.2338 3.7669,15.0798 5.6119,13.7628 5.9859,15.9998 10.0129,15.9998 10.3869,13.7618 12.2339,15.0798 15.0799,12.2338 13.7619,10.3868 15.9999,10.0148 15.9999,5.9868 13.7619,5.6128 15.0799,3.7668 12.2339,0.919800000000001 10.3869,2.2378 10.0139,-0.000199999999999534z" />
+                    <GeometryDrawing Brush="#FF424242" Geometry="F1M10.2123,8C10.2123,9.222 9.2223,10.212 8.0003,10.212 6.7783,10.212 5.7873,9.222 5.7873,8 5.7873,6.778 6.7783,5.788 8.0003,5.788 9.2223,5.788 10.2123,6.778 10.2123,8z M9.9643,3.257C9.8183,3.197,9.6683,3.17,9.5203,3.124L9.1663,1 6.8333,1 6.4803,3.121C6.1853,3.213,5.8993,3.332,5.6253,3.475L3.8753,2.225 2.2253,3.875 3.4773,5.627C3.4053,5.764 3.3183,5.89 3.2573,6.036 3.1973,6.182 3.1703,6.331 3.1243,6.479L1.0003,6.833 1.0003,9.166 3.1213,9.52C3.2133,9.815,3.3313,10.101,3.4753,10.375L2.2253,12.125 3.8753,13.775 5.6273,12.523C5.7643,12.595 5.8893,12.682 6.0353,12.742 6.1813,12.803 6.3313,12.83 6.4793,12.876L6.8333,15 9.1663,15 9.5203,12.879C9.8153,12.787,10.1013,12.668,10.3743,12.525L12.1243,13.775 13.7743,12.125 12.5233,10.373C12.5953,10.236 12.6823,10.11 12.7423,9.964 12.8033,9.818 12.8303,9.669 12.8763,9.521L15.0003,9.167 15.0003,6.834 12.8783,6.48C12.7863,6.185,12.6683,5.899,12.5243,5.625L13.7743,3.875 12.1253,2.225 10.3723,3.477C10.2353,3.405,10.1103,3.318,9.9643,3.257z" />
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+
+    <DrawingImage x:Key="OldVersionIcon" PresentationOptions:Freeze="True">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Brush="{DynamicResource VersionIconFill}" Geometry="M405.333 64H106.667C83.198 64 64 83.198 64 106.667v298.666C64 428.802 83.198 448 106.667 448h298.666C428.802 448 448 428.802 448 405.333V106.667C448 83.198 428.802 64 405.333 64z " />
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+
+    <DrawingImage x:Key="NewVersionIcon" PresentationOptions:Freeze="True">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Brush="Green" Geometry="M405.333 64H106.667C83.198 64 64 83.198 64 106.667v298.666C64 428.802 83.198 448 106.667 448h298.666C428.802 448 448 428.802 448 405.333V106.667C448 83.198 428.802 64 405.333 64z" />
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+
+
     <DrawingImage x:Key="RCLibImage" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -362,7 +467,7 @@
                     <GeometryDrawing Brush="#FFF6F6F6" Geometry="F1 M 22.4928,17.4971C 18.7844,17.4763 15.475,15.1344 14.2311,11.6294L 11.4694,11.6294C 8.43385,17.1816 2.57492e-005,15.0222 2.57492e-005,8.6956C 2.57492e-005,2.36896 8.43385,0.209644 11.4694,5.76176L 14.2311,5.76176C 16.6147,-0.950867 25.5909,-2.18436 29.6957,3.64415C 33.8004,9.47013 29.6227,17.5075 22.4928,17.4971 Z " />
                     <GeometryDrawing Brush="#FFF0EFF1" Geometry="F1 M 22.4928,11.6294C 19.8849,11.6294 18.5706,8.47133 20.4247,6.61715C 22.2685,4.77339 25.4266,6.07732 25.4266,8.6956C 25.4266,10.3151 24.1123,11.6294 22.4928,11.6294 Z " />
                     <GeometryDrawing Brush="#FF00539C" Geometry="F1 M 22.0513,2.28196C 18.8766,2.29172 16.1899,4.62696 15.741,7.77235L 10.4995,7.77235C 9.41119,3.30195 2.82515,4.08283 2.82515,8.68741C 2.82515,13.292 9.41119,14.0729 10.4995,9.60248L 15.741,9.60248C 16.5316,15.0172 23.3275,16.9986 26.9023,12.8528C 30.4869,8.70692 27.5319,2.27221 22.0513,2.28196 Z M 22.0513,11.4326C 19.6111,11.4326 18.3812,8.47756 20.1162,6.7426C 21.8414,5.0174 24.7964,6.23749 24.7964,8.68741C 24.7964,10.2028 23.5666,11.4326 22.0513,11.4326 Z " />
-                    <GeometryDrawing Brush="#FF00357B" Geometry="F1 M 29.5572,19.7999L 15.3266,14.4705L 15.3266,25.1292L 29.5572,19.7999 Z " />
+                    <GeometryDrawing Brush="{DynamicResource AMLIconForeground}" Geometry="F1 M 29.5572,19.7999L 15.3266,14.4705L 15.3266,25.1292L 29.5572,19.7999 Z " />
                 </DrawingGroup.Children>
             </DrawingGroup>
         </DrawingImage.Drawing>
@@ -479,7 +584,6 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-
     <DrawingImage x:Key="NotifyConstraintIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -503,7 +607,6 @@
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
-
 
     <DrawingImage x:Key="VerifiedOKIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
@@ -541,18 +644,17 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-
     <DrawingImage x:Key="OverrideIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
+
             <DrawingGroup>
                 <DrawingGroup.Children>
-                    <GeometryDrawing Brush="#FFF6F6F6" Geometry="F1M10,14L6,14 6,2 10,2z" />
-                    <GeometryDrawing Brush="#FF414141" Geometry="F1M9,11L7,11 7,13 9,13z M9,10L7,10 7,3 9,3z" />
+                    <GeometryDrawing Brush="{DynamicResource AdornerIconFill2}" Geometry="M10,0.75L15.5,6H12v13H8V6H4.5L10,0.75z" />
+
                 </DrawingGroup.Children>
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
-
 
     <DrawingImage x:Key="AttributeTableIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
@@ -567,8 +669,6 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-
-
     <DrawingImage x:Key="DerivedIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -578,8 +678,6 @@
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
-
-
 
     <DrawingImage x:Key="DownloadDocumentIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
@@ -595,7 +693,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="CopyIcon" PresentationOptions:Freeze="True">
+    <DrawingImage x:Key="AMLCopyIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
             <DrawingGroup>
                 <DrawingGroup.Children>
@@ -714,8 +812,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-
-    <DrawingImage x:Key="CutIcon" PresentationOptions:Freeze="True">
+    <DrawingImage x:Key="AMLCutIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
             <DrawingGroup>
                 <DrawingGroup.Children>
@@ -728,7 +825,7 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
-    <DrawingImage x:Key="PasteIcon" PresentationOptions:Freeze="True">
+    <DrawingImage x:Key="PasteAMLIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
             <DrawingGroup>
                 <DrawingGroup.Children>
@@ -854,6 +951,19 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
+    <DrawingImage x:Key="AMLDeleteIcon" PresentationOptions:Freeze="True">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Brush="#00FFFFFF" Geometry="F1M16,16L0,16 0,0 16,0z" />
+                    <GeometryDrawing Brush="#FFF6F6F6" Geometry="F1M8.0001,5.1721L3.4571,0.6291 0.629099999999999,3.4571 5.1721,8.0001 0.629099999999999,12.5431 3.4571,15.3711 8.0001,10.8281 12.5431,15.3711 15.3711,12.5431 10.8281,8.0001 15.3711,3.4571 12.5431,0.6291z" />
+                    <GeometryDrawing Brush="#FFA1260D" Geometry="F1M9.4141,8L13.9571,12.543 12.5431,13.957 8.0001,9.414 3.4571,13.957 2.0431,12.543 6.5861,8 2.0431,3.457 3.4571,2.043 8.0001,6.586 12.5431,2.043 13.9571,3.457z" />
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+
     <DrawingImage x:Key="DeleteIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -865,6 +975,7 @@
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
+
 
     <DrawingImage x:Key="DeleteAMLIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
@@ -890,6 +1001,7 @@
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
+
     <DrawingImage x:Key="DefaultLayoutIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
             <DrawingGroup>
@@ -977,7 +1089,6 @@
             </DrawingGroup>
         </DrawingImage.Drawing>
     </DrawingImage>
-
 
     <DrawingImage x:Key="PageNewIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
