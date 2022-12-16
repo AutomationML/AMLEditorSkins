@@ -1,4 +1,5 @@
-﻿using ControlzEx.Theming;
+﻿
+using ControlzEx.Theming;
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -8,7 +9,6 @@ using System.Windows.Controls.Primitives;
 #nullable disable
 namespace Aml.Skins
 {
-
     public static class AMLApp
     {
         public static Action<ResourceDictionary> ApplyColors { get; set; }
