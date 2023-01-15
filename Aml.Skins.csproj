@@ -8,7 +8,7 @@
 		<SignAssembly>True</SignAssembly>
 		<AssemblyOriginatorKeyFile>AmlSkinsKey.snk</AssemblyOriginatorKeyFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Version>2.0.0</Version>
+		<Version>2.0.1</Version>
 		<Authors>AutomationML, Josef Prinz</Authors>
 		<Company>AutomationML</Company>
 		<Description>This package provides the icons and styles used in the AutomationML Editor, among others, to design the user interface. Plugin developers can use this package to synchronize the appearance of a plugin with that of the editor.</Description>
@@ -18,7 +18,7 @@
 		<EnableDynamicLoading>true</EnableDynamicLoading>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>AMLEditor; AutomationML; AML;</PackageTags>
-		<PackageReleaseNotes>Removed target NET 5 because end of support by Microsoft; Projects in .NET 5, should migrate to .NET 6 (LTS) or keep using a previous version; .NET 7.0 target added</PackageReleaseNotes>
+		<PackageReleaseNotes>New SwapArrowIcon added. </PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/AutomationML/AMLEditorSkins</RepositoryUrl>
