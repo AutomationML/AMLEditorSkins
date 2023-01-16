@@ -1090,13 +1090,19 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
+    <SolidColorBrush
+        x:Key="light-defaultgrey"
+        Opacity="1"
+        Color="#212121" />
+    <SolidColorBrush x:Key="canvas" Opacity="0" />
+    
     <DrawingImage x:Key="SwapArrowIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
             <DrawingGroup>
                 <DrawingGroup.Children>
-                    <GeometryDrawing Brush="#00FFFFFF" Geometry="F1M0,0L16,0 16,16 0,16z" />
-                    <GeometryDrawing Brush="#FFF6F6F6" Geometry="F1M5.8788,3.2074L8.6718,6.0004 -0.000199999999999534,6.0004 -0.000199999999999534,9.9994 8.6718,9.9994 5.8788,12.7934 8.7068,15.6214 15.9998,8.3284 15.9998,7.6724 8.7068,0.3784z" />
-                    <GeometryDrawing Brush="#FF00529C" Geometry="M0 249.174l245.18 245.18v-179.78h778.82v-130.765h-778.82v-179.78zM778.82 559.787h-778.82v130.833h778.82v179.78l245.18-245.18-245.18-245.18z" />
+                    <GeometryDrawing Brush="{DynamicResource canvas}" Geometry="F1M16,16H0V0H16Z" />
+
+                    <GeometryDrawing Brush="{DynamicResource light-defaultgrey}" Geometry="F1M14.354,9v.854l-3,3-.708-.708L12.793,10H3V9ZM13,6H3.207L5.354,3.854l-.708-.708-3,3V7H13Z" />
                 </DrawingGroup.Children>
             </DrawingGroup>
         </DrawingImage.Drawing>
