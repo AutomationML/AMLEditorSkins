@@ -18,7 +18,7 @@
 		<EnableDynamicLoading>true</EnableDynamicLoading>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>AMLEditor; AutomationML; AML;</PackageTags>
-		<PackageReleaseNotes>New SwapArrowIcon added. </PackageReleaseNotes>
+		<PackageReleaseNotes>New SwapArrowIcon added. Redesign of some dark mode icons.</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/AutomationML/AMLEditorSkins</RepositoryUrl>
