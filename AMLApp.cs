@@ -4,7 +4,6 @@ using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows;
-using System.Windows.Controls.Primitives;
 
 #nullable disable
 namespace Aml.Skins
@@ -27,9 +26,9 @@ namespace Aml.Skins
             // ThemeManager.Current.ThemeSyncMode = ThemeSyncMode.
 
             // Load the ResourceDictionary into memory.
-            ResourceDictionary skinDict = Application.LoadComponent(skinDictionaryUri) as ResourceDictionary;
+            var skinDict = Application.LoadComponent(skinDictionaryUri) as ResourceDictionary;
 
-            Collection<ResourceDictionary> mergedDicts = app.Resources.MergedDictionaries;
+            var mergedDicts = app.Resources.MergedDictionaries;
 
             var skinSource = @"/Aml.Skins;component/Themes";
 
@@ -55,8 +54,8 @@ namespace Aml.Skins
 
         public static void SetColors (bool isDarkMode)
         {
-            ThemeColors = (isDarkMode) 
-                ? new ResourceDictionary {Source = SkinSource.DarkSkinColors }                
+            ThemeColors = (isDarkMode)
+                ? new ResourceDictionary {Source = SkinSource.DarkSkinColors }
                 : new ResourceDictionary {Source =SkinSource.LightSkinColors };
             
             ApplyColors?.Invoke (ThemeColors);
