@@ -5,7 +5,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    
+
     <!--  ********************************** THEME BRUSHES - For Color Tuner **********************************  -->
     <SolidColorBrush x:Key="Brush01" Color="#FF00AADE" />
     <SolidColorBrush x:Key="Brush02" Color="White" />
@@ -23,7 +23,7 @@
     <SolidColorBrush x:Key="AMLLibIconFill" Color="Transparent" />
     <SolidColorBrush x:Key="AdornerIconFill" Color="LawnGreen" />
     <SolidColorBrush x:Key="AdornerIconFill2" Color="DeepSkyBlue" />
-    <SolidColorBrush x:Key="VersionIconFill" Color="#FFC6C6C6"></SolidColorBrush>
+    <SolidColorBrush x:Key="VersionIconFill" Color="#FFC6C6C6" />
 
 
     <!--  LINK COLORS  -->
