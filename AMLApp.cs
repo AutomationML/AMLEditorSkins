@@ -1,8 +1,8 @@
 ﻿#nullable disable
+using ControlzEx.Theming;
 using System;
 using System.Linq;
 using System.Windows;
-using ControlzEx.Theming;
 
 namespace Aml.Skins;
 
