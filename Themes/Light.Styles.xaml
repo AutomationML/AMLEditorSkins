@@ -166,6 +166,11 @@
     <SolidColorBrush x:Key="MenuIconColumnBorderBrush" Color="{StaticResource Color_016}" />
     <SolidColorBrush x:Key="MenuItemVerticalBrush" Color="{StaticResource Color_005}" />
 
+    <!--<Style TargetType="{x:Type CheckBox}" BasedOn="{StaticResource MahApps.Styles.CheckBox}">
+        <Style.Resources>
+            <SolidColorBrush x:Key="HighlightBrush" Color="Black" />
+        </Style.Resources>
+    </Style>-->
     <Style BasedOn="{StaticResource MahApps.Styles.ContextMenu}" TargetType="ContextMenu" />
     <Style BasedOn="{StaticResource MahApps.Styles.MenuItem}" TargetType="MenuItem" />
     <Style BasedOn="{StaticResource MahApps.Styles.Menu}" TargetType="Menu" />
