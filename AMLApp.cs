@@ -1,4 +1,5 @@
-﻿#nullable disable
+﻿// Copyright (c) 2017 AutomationML e.V.
+#nullable disable
 using ControlzEx.Theming;
 using System;
 using System.Linq;

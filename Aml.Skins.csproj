@@ -12,7 +12,7 @@
 		<Authors>AutomationML, Josef Prinz</Authors>
 		<Company>AutomationML</Company>
 		<Description>This package provides the icons and styles used in the AutomationML Editor, among others, to design the user interface. Plugin developers can use this package to synchronize the appearance of a plugin with that of the editor.</Description>
-		<Copyright>AutomationML e.V. 2022</Copyright>
+		<Copyright>AutomationML e.V. 2020</Copyright>
 		<PackageProjectUrl>https://www.automationml.org</PackageProjectUrl>
 		<PackageIcon>AML.png</PackageIcon>
 		<EnableDynamicLoading>true</EnableDynamicLoading>
