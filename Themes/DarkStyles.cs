@@ -10,9 +10,13 @@ namespace Aml.Skins.Themes
     {
         private void CheckBoxChecked(object sender, EventArgs e)
         {
-            var rb = CheckBoxHelper.GetCheckGlyphForegroundChecked(sender as DependencyObject);
-            CheckBoxHelper.SetCheckGlyphForegroundChecked(sender as DependencyObject, Brushes.White);
-            var h = CheckBoxHelper.CheckGlyphForegroundCheckedProperty;
+            if (sender is not DependencyObject dpo)
+            {
+                return;
+            }
+            _ = CheckBoxHelper.GetCheckGlyphForegroundChecked(dpo);
+            CheckBoxHelper.SetCheckGlyphForegroundChecked(dpo, Brushes.White);
+            _ = CheckBoxHelper.CheckGlyphForegroundCheckedProperty;
         }
     }
 }
