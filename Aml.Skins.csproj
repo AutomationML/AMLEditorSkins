@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net6.0-windows;net8.0-windows</TargetFrameworks>
+		<TargetFrameworks>net8.0-windows</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
 		<UseWPF>true</UseWPF>
@@ -49,7 +49,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="MahApps.Metro" Version="3.0.0-alpha0513" />
-	  <PackageReference Include="System.Text.Json" Version="8.0.5" />
+	  <PackageReference Include="System.Text.Json" Version="9.0.0" />
 	</ItemGroup>
 
  
