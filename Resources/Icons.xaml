@@ -711,6 +711,26 @@
         </DrawingImage.Drawing>
     </DrawingImage>
 
+    <DrawingImage x:Key="DupItemIcon" PresentationOptions:Freeze="True">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.Children>
+                    <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M 6.40736,4.17436L 22.4074,4.17436L 22.4074,22.1744L 6.40736,22.1744L 6.40736,4.17436 Z ">
+                        <GeometryDrawing.Pen>
+                            <Pen Thickness="2" LineJoin="Round" Brush="#FF230FD2"/>
+                        </GeometryDrawing.Pen>
+                    </GeometryDrawing>
+                    <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M 1,1L 19,1L 19,19L 1,19L 1,1 Z ">
+                        <GeometryDrawing.Pen>
+                            <Pen Thickness="2" LineJoin="Round" Brush="#FF230FD2"/>
+                        </GeometryDrawing.Pen>
+                    </GeometryDrawing>
+                    <GeometryDrawing Brush="#FF000000" Geometry="F1 M 11.3033,11.2933L 11.3033,15.12L 8.72,15.12L 8.72,11.2933L 4.88,11.2933L 4.88,8.72L 8.72,8.72L 8.72,4.88L 11.3033,4.88L 11.3033,8.72L 15.12,8.72L 15.12,11.2933L 11.3033,11.2933 Z "/>
+                </DrawingGroup.Children>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    
     <DrawingImage x:Key="AddItemIcon" PresentationOptions:Freeze="True">
         <DrawingImage.Drawing>
             <DrawingGroup>
