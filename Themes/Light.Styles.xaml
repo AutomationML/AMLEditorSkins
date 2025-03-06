@@ -193,7 +193,7 @@
 
     <Style x:Key="WindowToolBarBorderStyle" TargetType="Border">
         <Setter Property="Margin" Value="0,1" />
-        <Setter Property="BorderBrush" Value="SteelBlue" />
+        <Setter Property="BorderBrush" Value="{StaticResource MahApps.Brushes.Accent}" />
         <!--<Setter Property="BorderBrush" Value="#FFE2EDF9" />-->
         <!--<Setter Property="Height" Value="30" />-->
         <Setter Property="BorderThickness" Value="0,0,0,0.5" />
@@ -208,7 +208,10 @@
         </Setter>
     </Style>
 
-    <Style x:Key="ToolBarSplitButtonStyle" TargetType="{x:Type mah:SplitButton}">
+    <Style
+        x:Key="ToolBarSplitButtonStyle"
+        BasedOn="{StaticResource MahApps.Styles.SplitButton.WindowCommands}"
+        TargetType="{x:Type mah:SplitButton}">
         <Setter Property="ButtonStyle">
             <Setter.Value>
                 <Style BasedOn="{StaticResource {x:Type Button}}" TargetType="{x:Type Button}">
