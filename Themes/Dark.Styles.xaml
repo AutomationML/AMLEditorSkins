@@ -1,9 +1,9 @@
-﻿<ResourceDictionary x:Class="Aml.Skins.Themes.DarkStyles"
+﻿<ResourceDictionary
+    x:Class="Aml.Skins.Themes.DarkStyles"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
@@ -175,7 +175,7 @@
     <SolidColorBrush x:Key="ContextMenuForegroundBrush" Color="{StaticResource Color_002}" />
     <SolidColorBrush x:Key="MenuSeparatorBackgroundBrush" Color="{StaticResource Color_005}" />
 
-    <SolidColorBrush x:Key="MahApps.Brushes.CheckmarkFill" Color="{StaticResource Color_001}"  />
+    <SolidColorBrush x:Key="MahApps.Brushes.CheckmarkFill" Color="{StaticResource Color_001}" />
 
     <!--  MenuItem Brushes  -->
     <SolidColorBrush x:Key="MenuItemHoverBackgroundBrush" Color="{StaticResource Color_006}" />
@@ -186,16 +186,16 @@
     <SolidColorBrush x:Key="MenuIconColumnBorderBrush" Color="{StaticResource Color_016}" />
     <SolidColorBrush x:Key="MenuItemVerticalBrush" Color="{StaticResource Color_006}" />
 
-    <Style TargetType="{x:Type CheckBox}" BasedOn="{StaticResource MahApps.Styles.CheckBox}">
-        <Setter Property="mah:CheckBoxHelper.CheckGlyphForegroundChecked" Value="White"></Setter>
+    <Style BasedOn="{StaticResource MahApps.Styles.CheckBox}" TargetType="{x:Type CheckBox}">
+        <Setter Property="mah:CheckBoxHelper.CheckGlyphForegroundChecked" Value="White" />
     </Style>
-    
+
     <Style BasedOn="{StaticResource MahApps.Styles.ContextMenu}" TargetType="ContextMenu" />
     <Style BasedOn="{StaticResource MahApps.Styles.MenuItem}" TargetType="MenuItem">
         <Style.Resources>
-            <SolidColorBrush x:Key="MahApps.Brushes.CheckmarkFill" Color="{StaticResource Color_001}"  />
+            <SolidColorBrush x:Key="MahApps.Brushes.CheckmarkFill" Color="{StaticResource Color_001}" />
         </Style.Resources>
-        <Setter Property="mah:CheckBoxHelper.CheckGlyphForegroundChecked" Value="White"></Setter>
+        <Setter Property="mah:CheckBoxHelper.CheckGlyphForegroundChecked" Value="White" />
     </Style>
     <Style BasedOn="{StaticResource MahApps.Styles.Menu}" TargetType="Menu" />
     <Style BasedOn="{StaticResource MahApps.Styles.ListBoxItem}" TargetType="ListBoxItem" />
@@ -236,7 +236,7 @@
 
         <Setter Property="ItemContainerStyle">
             <Setter.Value>
-                <Style TargetType="ComboBoxItem" BasedOn="{StaticResource MahApps.Styles.ComboBoxItem}">
+                <Style BasedOn="{StaticResource MahApps.Styles.ComboBoxItem}" TargetType="ComboBoxItem">
                     <Setter Property="Padding" Value="5,2" />
                 </Style>
             </Setter.Value>
