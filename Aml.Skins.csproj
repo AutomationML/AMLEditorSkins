@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0-windows</TargetFrameworks>
+		<TargetFrameworks>net8.0-windows;net10.0-windows</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
 		<UseWPF>true</UseWPF>
@@ -48,10 +48,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="MahApps.Metro" Version="3.0.0-alpha0513" />
-	  <PackageReference Include="System.Text.Json" Version="9.0.2" />
+	  <PackageReference Include="MahApps.Metro" Version="3.0.0-rc0529" />
 	</ItemGroup>
 
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+    <PackageReference Include="System.Text.Json" Version="8.0.5"></PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' != 'net6.0' ">
+    <PackageReference Include="System.Text.Json" Version="10.0.2"></PackageReference>
+  </ItemGroup>
  
   <ItemGroup>
 	  <Page Update="Themes\DarkSkin.xaml">
