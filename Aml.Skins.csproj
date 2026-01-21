@@ -8,7 +8,7 @@
 		<SignAssembly>True</SignAssembly>
 		<AssemblyOriginatorKeyFile>AmlSkinsKey.snk</AssemblyOriginatorKeyFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Version>2.1.1</Version>
+		<Version>2.2.0</Version>
 		<Authors>AutomationML, Josef Prinz</Authors>
 		<Company>AutomationML</Company>
 		<Description>This package provides the icons and styles used in the AutomationML Editor, among others, to design the user interface. Plugin developers can use this package to synchronize the appearance of a plugin with that of the editor.</Description>
@@ -18,7 +18,7 @@
 		<EnableDynamicLoading>true</EnableDynamicLoading>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>AMLEditor; AutomationML; AML;</PackageTags>
-		<PackageReleaseNotes>Supports .NET8.</PackageReleaseNotes>
+		<PackageReleaseNotes>Support for .NET 10.0 added.</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/AutomationML/AMLEditorSkins</RepositoryUrl>
